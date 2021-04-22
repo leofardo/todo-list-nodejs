@@ -5,6 +5,30 @@
 	<title>Lista de Tarefas</title>
 </head>
 	<body>
-		<h1>Hello World</h1>
+		<header>
+			<div id="titulo">
+				<h1>Lista de Tarefas</h1>
+			</div>
+		</header>
+
+		<section id="container">
+			<div id="opcoesContainer">
+				<ul>
+					<li><a href="#">Criar tarefa</a></li>
+					<li><a href="#">Pendentes</a></li>
+					<li><a href="#">Realizadas</a></li>
+					<li><a href="#">Todas as Tarefas</a></li>
+				</ul>	
+			</div>
+
+			<div id="tarefasContainer">
+				<%for(i = 0; i < 6; i++){  %>
+					<article class="tarefa">
+						tarefa <%=i%>
+					</article>
+				<%}%>	
+			</div>
+
+		</section>
 	</body>
 </html>
