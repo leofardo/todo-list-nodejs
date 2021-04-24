@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Lista de Tarefas</title>
 </head>
@@ -22,9 +26,16 @@
 			</div>
 
 			<div id="tarefasContainer">
-				<%for(i = 0; i < 6; i++){  %>
+				<%for(i = 0; i < tarefas.length; i++){  %>
 					<article class="tarefa">
-						tarefa <%=i%>
+						<div class="tarefa-nome">
+							<%=tarefas[i].tarefa%>
+						</div>
+
+						<div class="botoes">
+							<button><i class="fas fa-edit"></i></button>
+							<button><i class="fas fa-trash-alt"></i></button>
+						</div>
 					</article>
 				<%}%>	
 			</div>
