@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Lista de Tarefas</title>
+	<title>Lista de Tarefas - Criar Tarefa</title>
 </head>
 	<body>
 		<header>
@@ -25,21 +25,12 @@
 				</ul>	
 			</div>
 
-			<div id="tarefasContainer">
-				<%for(i = 0; i < tarefas.length; i++){  %>
-					<article class="tarefa">
-						<div class="tarefa-nome">
-							<%=tarefas[i].tarefa%>
-						</div>
-
-						<div class="botoes">
-							<button class="lixo" onclick="button.remove('<%=tarefas[i].id%>')" ><i class="fas fa-trash-alt"></i></button>
-							<button><i class="fas fa-edit"></i></button>
-							<button><i class="fas fa-check-square"></i></button>
-							
-						</div>
-					</article>
-				<%}%>	
+			<div id="formulario">
+				<form action="criar-tarefa" method="post">
+					<label for="tarefaCriar">Digite sua tarefa</label>
+					<input id="tarefaCriar" type="text" name="tarefa">
+					<input type="submit" value="Registrar">
+				</form>
 			</div>
 
 		</section>
