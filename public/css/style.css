@@ -74,6 +74,18 @@ header #titulo{
 	text-align: center;
 }
 
+.input-nome{
+	font-size: 1.2em;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	width: 70%;
+	height: 2em;
+	padding: 2px 3px;
+}
+
+
 .tarefa .botoes{
 	min-height: 15px;
 	display: flex;
@@ -90,6 +102,11 @@ header #titulo{
 	font-size: 1.2em;
 	margin-left: 7px;
 	cursor: pointer;
+}
+
+.cancelar{
+	font-size: 1.2em;
+	width: 1.2em;
 }
 
 /*Criar Tarefa*/

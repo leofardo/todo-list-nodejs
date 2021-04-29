@@ -27,14 +27,14 @@
 
 			<div id="tarefasContainer">
 				<%for(i = 0; i < tarefas.length; i++){  %>
-					<article class="tarefa">
+					<article id="tarefa-<%=tarefas[i].id%>" class="tarefa">
 						<div class="tarefa-nome">
 							<%=tarefas[i].tarefa%>
 						</div>
 
 						<div class="botoes">
 							<button class="lixo" onclick="button.remove('<%=tarefas[i].id%>')" ><i class="fas fa-trash-alt"></i></button>
-							<button><i class="fas fa-edit"></i></button>
+							<button onclick="taskHTML.changeHTML('<%=tarefas[i].id%>')" ><i class="fas fa-edit"></i></button>
 							<button><i class="fas fa-check-square"></i></button>
 							
 						</div>

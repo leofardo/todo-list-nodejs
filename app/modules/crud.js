@@ -13,6 +13,10 @@ class CRUD{
 	adicionarTarefa(tarefa, callback){
 		this.connection.query(`insert into tarefas(tarefa)values('${tarefa}')`, callback)
 	}
+
+	editarTarefa(id, tarefa, callback){
+		this.connection.query(`update tarefas set tarefa = '${tarefa}' where id = ${id}`, callback)
+	}
 }
 
 module.exports = ()=>{
