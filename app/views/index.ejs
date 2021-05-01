@@ -19,8 +19,8 @@
 			<div id="opcoesContainer">
 				<ul>
 					<li><a href="/criar-tarefa">Criar tarefa</a></li>
-					<li><a href="#">Pendentes</a></li>
-					<li><a href="#">Realizadas</a></li>
+					<li><a href="/pendentes">Pendentes</a></li>
+					<li><a href="/realizados">Realizadas</a></li>
 					<li><a href="/">Todas as Tarefas</a></li>
 				</ul>	
 			</div>
@@ -34,9 +34,11 @@
 
 						<div class="botoes">
 							<button class="lixo" onclick="button.remove('<%=tarefas[i].id%>')" ><i class="fas fa-trash-alt"></i></button>
-							<button onclick="taskHTML.changeHTML('<%=tarefas[i].id%>')" ><i class="fas fa-edit"></i></button>
-							<button><i class="fas fa-check-square"></i></button>
 							
+							<%if(tarefas[i].realizada == 0){%>
+								<button onclick="taskHTML.changeHTML('<%=tarefas[i].id%>')" ><i class="fas fa-edit"></i></button>
+								<button onclick="button.check('<%=tarefas[i].id%>')"><i class="fas fa-check-square"></i></button>
+							<%}%>
 						</div>
 					</article>
 				<%}%>	

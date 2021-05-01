@@ -10,6 +10,10 @@ class Button{
 
 		window.location = `/edit/${tarefaId}/?name=${tarefaNome}`
 	}
+
+	check(tarefaId){
+		window.location = `/check/${tarefaId}`
+	}
 }
 
 class TaskHTML{

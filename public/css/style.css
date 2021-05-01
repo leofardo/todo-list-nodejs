@@ -6,14 +6,14 @@
 
 header{
 	height: 100px;
-	background: #00406e;
+	background: #1c1c1c;
 	display: flex;
 	align-items: center;
 }
 
 header #titulo{
 	margin-left:30px;
-	color: #E3E9F0; 
+	color: #eaeaea; 
 }
 
 #container{
@@ -24,8 +24,9 @@ header #titulo{
 }
 
 #opcoesContainer{
-	background-color: #2f5988;
+	background-color: #eaeaea;
 	min-width: 200px;
+	border-right: 3px solid #1c1c1c;
 }
 
 #opcoesContainer ul{
@@ -33,18 +34,19 @@ header #titulo{
 }
 
 #opcoesContainer li{
-
+	margin-top: 3px;
 }
 
 #opcoesContainer a{
-	margin-top: 15px;
 	display: block;
 	align-items: space-around;
-	background: #00406e;
-	color: #E3E9F0;
+	background: #1c1c1c;
+	color: #eaeaea;
 	text-decoration: none;
-	padding: 25px;
+	padding: 20px;
 }
+
+
 
 /*Tarefas*/
 
@@ -59,13 +61,15 @@ header #titulo{
 .tarefa{
 	width: 40%;
 	margin: 10px;
-	background: #2f5988;
+	background: #eaeaea;
 	height: 150px;
 	display: flex;
 	justify-content: flex-end;
 	word-break: break-all;
 	flex-direction: column;
-	color: #E3E9F0;
+	color: #1c1c1c;
+	border: 3px solid #1c1c1c;
+	border-radius: 6px;
 }
 
 .tarefa-nome{
@@ -92,7 +96,7 @@ header #titulo{
 	align-items: center;
 	justify-content: flex-end;
 	padding: 8px 14px;
-	background: #00406e;
+	background: #1c1c1c;
 }
 
 .tarefa .botoes button{
@@ -102,6 +106,10 @@ header #titulo{
 	font-size: 1.2em;
 	margin-left: 7px;
 	cursor: pointer;
+}
+
+.tarefa .botoes button:nth-child(3){
+	font-size: 1.3em;
 }
 
 .cancelar{
@@ -122,7 +130,7 @@ header #titulo{
 	min-height: 270px;
 	min-width: 300px;
 	color: #E3E9F0;
-	background: #2f5988;
+	background: #1c1c1c;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -138,12 +146,12 @@ header #titulo{
 	width: 65%;
 	height: 30px;
 	padding: 0 5%;
-
 }
 
 #formulario input[type='submit']{
 	height: 50px;
 	width: 70%;
 	margin-top: 30px;
+	font-weight: bold;
 	
 }
